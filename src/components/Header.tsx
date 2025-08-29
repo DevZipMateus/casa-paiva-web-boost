@@ -35,8 +35,8 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-border"
-          : "bg-transparent"
+          ? "bg-red-600/95 backdrop-blur-md shadow-lg border-b border-border"
+          : "bg-red-600"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -48,8 +48,8 @@ const Header = () => {
               className="w-12 h-12 object-contain"
             />
             <div>
-              <h1 className="text-xl font-bold text-foreground">Casa Paiva</h1>
-              <p className="text-sm text-muted-foreground">Construímos Confiança!</p>
+              <h1 className="text-xl font-bold text-white">Casa Paiva</h1>
+              <p className="text-sm text-white/80">Construímos Confiança!</p>
             </div>
           </div>
 
@@ -59,7 +59,7 @@ const Header = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href.substring(1))}
-                className="text-foreground hover:text-red-600 transition-colors font-medium"
+                className="text-white hover:text-white/80 transition-colors font-medium"
               >
                 {item.label}
               </button>
@@ -70,7 +70,7 @@ const Header = () => {
           <div className="hidden md:block">
             <a
               href="https://wa.me/5584988239162"
-              className="inline-flex items-center px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-semibold"
+              className="inline-flex items-center px-6 py-3 bg-white text-red-600 rounded-lg hover:bg-white/90 transition-colors font-semibold"
             >
               Falar no WhatsApp
             </a>
@@ -80,7 +80,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden text-white hover:bg-white/20"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X /> : <Menu />}
@@ -89,20 +89,20 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-border shadow-lg">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-red-600 border-b border-border shadow-lg">
             <nav className="px-4 py-6 space-y-4">
               {menuItems.map((item) => (
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href.substring(1))}
-                  className="block w-full text-left text-foreground hover:text-red-600 transition-colors font-medium py-2"
+                  className="block w-full text-left text-white hover:text-white/80 transition-colors font-medium py-2"
                 >
                   {item.label}
                 </button>
               ))}
               <a
                 href="https://wa.me/5584988239162"
-                className="block w-full text-center bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition-colors font-semibold mt-4"
+                className="block w-full text-center bg-white text-red-600 py-3 rounded-lg hover:bg-white/90 transition-colors font-semibold mt-4"
               >
                 Falar no WhatsApp
               </a>
