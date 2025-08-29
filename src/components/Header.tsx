@@ -35,9 +35,12 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-red-600/95 backdrop-blur-md shadow-lg border-b border-border"
-          : "bg-red-600"
+          ? "backdrop-blur-md shadow-lg border-b border-border"
+          : ""
       }`}
+      style={{
+        backgroundColor: isScrolled ? 'rgba(255, 39, 52, 0.95)' : '#ff2734'
+      }}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
@@ -70,7 +73,7 @@ const Header = () => {
           <div className="hidden md:block">
             <a
               href="https://wa.me/5584988239162"
-              className="inline-flex items-center px-6 py-3 bg-white text-red-600 rounded-lg hover:bg-white/90 transition-colors font-semibold"
+              className="inline-flex items-center px-6 py-3 bg-white text-[#ff2734] rounded-lg hover:bg-white/90 transition-colors font-semibold"
             >
               Falar no WhatsApp
             </a>
@@ -89,7 +92,10 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-red-600 border-b border-border shadow-lg">
+          <div 
+            className="md:hidden absolute top-full left-0 right-0 border-b border-border shadow-lg"
+            style={{ backgroundColor: '#ff2734' }}
+          >
             <nav className="px-4 py-6 space-y-4">
               {menuItems.map((item) => (
                 <button
@@ -102,7 +108,7 @@ const Header = () => {
               ))}
               <a
                 href="https://wa.me/5584988239162"
-                className="block w-full text-center bg-white text-red-600 py-3 rounded-lg hover:bg-white/90 transition-colors font-semibold mt-4"
+                className="block w-full text-center bg-white text-[#ff2734] py-3 rounded-lg hover:bg-white/90 transition-colors font-semibold mt-4"
               >
                 Falar no WhatsApp
               </a>
