@@ -1,9 +1,19 @@
-
 import { ArrowRight, Star, Clock, MapPin } from "lucide-react";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 to-white overflow-hidden">
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover opacity-20"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="/lovable-uploads/paiva.mp4" type="video/mp4" />
+      </video>
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-red-200 rounded-full blur-xl"></div>
@@ -11,7 +21,7 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-red-100 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-20 relative">
+      <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="flex flex-col items-center text-center">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-semibold mb-8">
