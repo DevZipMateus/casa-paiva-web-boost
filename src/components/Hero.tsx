@@ -1,6 +1,5 @@
 
 import { ArrowRight, Star, Clock, MapPin } from "lucide-react";
-import ProductCarousel from "./ProductCarousel";
 
 const Hero = () => {
   return (
@@ -13,48 +12,40 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 py-20 relative">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Text Content */}
-          <div className="text-center lg:text-left">
-            {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-semibold mb-8">
-              <Star className="w-4 h-4 mr-2" />
-              8 anos de confiança no mercado
-            </div>
-
-            {/* Main Heading */}
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Materiais de
-              <span className="text-red-600 block">Construção</span>
-              com Qualidade
-            </h1>
-
-            {/* Subtitle */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              Na Casa Paiva você encontra tudo para sua obra com preços justos, atendimento personalizado e produtos de primeira linha.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <a
-                href="https://wa.me/5584988239162"
-                className="inline-flex items-center px-8 py-4 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-all duration-300 font-semibold text-lg group"
-              >
-                Falar no WhatsApp
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-              <button
-                onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}
-                className="inline-flex items-center px-8 py-4 bg-white text-red-600 border-2 border-red-600 rounded-lg hover:bg-red-50 transition-all duration-300 font-semibold text-lg"
-              >
-                Ver Produtos
-              </button>
-            </div>
+        <div className="flex flex-col items-center text-center">
+          {/* Badge */}
+          <div className="inline-flex items-center px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-semibold mb-8">
+            <Star className="w-4 h-4 mr-2" />
+            8 anos de confiança no mercado
           </div>
 
-          {/* Right Column - Product Carousel */}
-          <div className="flex justify-center lg:justify-end">
-            <ProductCarousel />
+          {/* Main Heading */}
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight max-w-4xl">
+            Materiais de
+            <span className="text-red-600 block">Construção</span>
+            com Qualidade
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
+            Na Casa Paiva você encontra tudo para sua obra com preços justos, atendimento personalizado e produtos de primeira linha.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <a
+              href="https://wa.me/5584988239162"
+              className="inline-flex items-center px-8 py-4 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-all duration-300 font-semibold text-lg group"
+            >
+              Falar no WhatsApp
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <button
+              onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}
+              className="inline-flex items-center px-8 py-4 bg-white text-red-600 border-2 border-red-600 rounded-lg hover:bg-red-50 transition-all duration-300 font-semibold text-lg"
+            >
+              Ver Produtos
+            </button>
           </div>
         </div>
 

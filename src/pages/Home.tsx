@@ -2,6 +2,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import ProductShowcase from "@/components/ProductShowcase";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
@@ -29,6 +30,7 @@ const Home = () => {
           <section id="inicio">
             <Hero />
           </section>
+          <ProductShowcase />
           <section id="servicos">
             <Services />
           </section>
