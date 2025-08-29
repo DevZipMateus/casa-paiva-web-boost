@@ -18,9 +18,9 @@ const ProductShowcase = () => {
           <ProductCarousel />
         </div>
 
-        {/* Video da furadeira - tamanho reduzido */}
-        <div className="flex justify-center">
-          <div className="w-full max-w-lg">
+        {/* Videos lado a lado */}
+        <div className="flex justify-center gap-8">
+          <div className="w-full max-w-md">
             <video
               className="w-full h-auto rounded-xl shadow-lg"
               autoPlay
@@ -31,6 +31,20 @@ const ProductShowcase = () => {
               style={{ pointerEvents: 'none' }}
             >
               <source src="/lovable-uploads/furadeira.mp4" type="video/mp4" />
+            </video>
+          </div>
+          
+          <div className="w-full max-w-md">
+            <video
+              className="w-full h-auto rounded-xl shadow-lg"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls={false}
+              style={{ pointerEvents: 'none' }}
+            >
+              <source src="/lovable-uploads/vaso.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
