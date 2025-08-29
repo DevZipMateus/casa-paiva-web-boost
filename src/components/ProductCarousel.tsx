@@ -67,8 +67,8 @@ const ProductCarousel = () => {
   };
 
   return (
-    <div className="relative w-full max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
-      <div className="relative h-80 overflow-hidden">
+    <div className="relative w-full max-w-2xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+      <div className="relative h-96 overflow-hidden">
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
@@ -78,28 +78,28 @@ const ProductCarousel = () => {
         {/* Navigation Buttons */}
         <button
           onClick={goToPrevious}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
+          className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-colors"
           aria-label="Imagem anterior"
         >
-          <ChevronLeft className="w-4 h-4" />
+          <ChevronLeft className="w-5 h-5" />
         </button>
         
         <button
           onClick={goToNext}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
+          className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-colors"
           aria-label="Próxima imagem"
         >
-          <ChevronRight className="w-4 h-4" />
+          <ChevronRight className="w-5 h-5" />
         </button>
       </div>
       
       {/* Indicators */}
-      <div className="flex justify-center space-x-2 py-3 bg-gray-50">
+      <div className="flex justify-center space-x-2 py-4 bg-gray-50">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition-colors ${
+            className={`w-3 h-3 rounded-full transition-colors ${
               index === currentIndex ? 'bg-red-600' : 'bg-gray-300'
             }`}
             aria-label={`Ir para imagem ${index + 1}`}
