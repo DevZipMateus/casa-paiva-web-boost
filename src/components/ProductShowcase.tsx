@@ -14,8 +14,25 @@ const ProductShowcase = () => {
           </p>
         </div>
         
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-12">
           <ProductCarousel />
+        </div>
+
+        {/* Video da furadeira */}
+        <div className="flex justify-center">
+          <div className="w-full max-w-2xl">
+            <video
+              className="w-full h-auto rounded-xl shadow-lg"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls={false}
+              style={{ pointerEvents: 'none' }}
+            >
+              <source src="/lovable-uploads/furadeira.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </section>
