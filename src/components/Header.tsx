@@ -42,9 +42,11 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">CP</span>
-            </div>
+            <img 
+              src="/lovable-uploads/fe61b619-9375-4ed4-bc94-2fa43cbac9fa.png" 
+              alt="Logo Casa Paiva" 
+              className="w-12 h-12 object-contain"
+            />
             <div>
               <h1 className="text-xl font-bold text-foreground">Casa Paiva</h1>
               <p className="text-sm text-muted-foreground">Construímos Confiança!</p>

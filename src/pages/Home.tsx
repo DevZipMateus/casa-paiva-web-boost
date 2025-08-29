@@ -19,7 +19,7 @@ const Home = () => {
         <meta property="og:description" content="Casa Paiva oferece materiais de construção com qualidade, variedade e preço justo em Mossoró/RN. Hidráulico, elétrico, tintas, ferramentas e muito mais. 8 anos de confiança!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.paivacasa.com.br" />
-        <meta property="og:image" content="/logo-casa-paiva.png" />
+        <meta property="og:image" content="/lovable-uploads/fe61b619-9375-4ed4-bc94-2fa43cbac9fa.png" />
         <link rel="canonical" href="https://www.paivacasa.com.br" />
       </Helmet>
       

@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -58,7 +57,7 @@ const Services = () => {
         <meta property="og:description" content="Conheça todos os serviços da Casa Paiva: material hidráulico, elétrico, tintas, ferramentas, EPI, segurança residencial e muito mais. Tudo para sua obra em Mossoró/RN." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.paivacasa.com.br/servicos" />
-        <meta property="og:image" content="/logo-casa-paiva.png" />
+        <meta property="og:image" content="/lovable-uploads/fe61b619-9375-4ed4-bc94-2fa43cbac9fa.png" />
         <link rel="canonical" href="https://www.paivacasa.com.br/servicos" />
       </Helmet>
 

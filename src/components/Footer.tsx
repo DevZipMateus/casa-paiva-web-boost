@@ -9,9 +9,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">CP</span>
-              </div>
+              <img 
+                src="/lovable-uploads/fe61b619-9375-4ed4-bc94-2fa43cbac9fa.png" 
+                alt="Logo Casa Paiva" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h3 className="text-2xl font-bold">Casa Paiva</h3>
                 <p className="text-muted opacity-80">Construímos Confiança!</p>
