@@ -67,8 +67,8 @@ const ProductCarousel = () => {
   };
 
   return (
-    <div className="relative w-full max-w-2xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
-      <div className="relative h-96 overflow-hidden">
+    <div className="relative w-full max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+      <div className="relative h-96 md:h-[500px] overflow-hidden">
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}

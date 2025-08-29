@@ -18,9 +18,9 @@ const ProductShowcase = () => {
           <ProductCarousel />
         </div>
 
-        {/* Video da furadeira */}
+        {/* Video da furadeira - tamanho reduzido */}
         <div className="flex justify-center">
-          <div className="w-full max-w-2xl">
+          <div className="w-full max-w-lg">
             <video
               className="w-full h-auto rounded-xl shadow-lg"
               autoPlay
