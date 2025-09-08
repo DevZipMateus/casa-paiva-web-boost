@@ -16,7 +16,7 @@ const Contact = () => {
         <meta property="og:description" content="Entre em contato com a Casa Paiva. Endereço: Av. Francisco Mota, 72, Pintos, Mossoró/RN. WhatsApp: (84) 98823-9162. Horários de funcionamento e localização." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.paivacasa.com.br/contato" />
-        <meta property="og:image" content="/logo-casa-paiva.png" />
+        <meta property="og:image" content="/lovable-uploads/fe61b619-9375-4ed4-bc94-2fa43cbac9fa.png" />
         <link rel="canonical" href="https://www.paivacasa.com.br/contato" />
       </Helmet>
 
